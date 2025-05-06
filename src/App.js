@@ -9,6 +9,7 @@ function App() {
 
   const [selectedColor, setSelectedColor] = useState('white');
 
+  //Make colors Object
   const colors = {
     white: 'white',
     blue: '#2f3446',
@@ -17,6 +18,7 @@ function App() {
     orange: '#eea765' 
   }
 
+  //Make colorImages Object
   const colorImages = {
     white: whiteShirt,
     blue: blueShirt,
@@ -30,6 +32,8 @@ function App() {
     <>
     <div class="container-fluid justify-items-center mt-5">
       <div style={{width: '300px', boxShadow: '0px 0px 5px #222222', borderRadius: '7px'}}>
+        {/* //image src changing through colorImages keys */}
+
         <img src= {colorImages[selectedColor]} alt={`Product in ${selectedColor}`} class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div style={{padding: '15px', borderTop: '2px solid #222222'}}>
         <div class="flex justify-between">
