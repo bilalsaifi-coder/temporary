@@ -40,7 +40,7 @@ function App() {
           <p class="text-xl font-medium text-gray-900">$35</p>
         </div>
         <div style={{display: 'flex', gap: '10px', alignItems: 'center'}}>
-          <p class='text-md'>Select Color:</p>
+          <p class='text-md'>Color:</p>
 
           {/* //Makes buttons from colors objects (jitni keys exist hai) */}
           {Object.entries(colors).map(([colorName, colorValue]) =>(
@@ -61,10 +61,13 @@ function App() {
         </div>
         </div>
       </div>
+      <p class='mt-5 font-bold'>*Changing an Image according to color Selection</p>
     </div>
 
+    
     </>
   );
 }
+
 
 export default App;
